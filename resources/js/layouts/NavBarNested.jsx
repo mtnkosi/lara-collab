@@ -86,13 +86,13 @@ export default function Sidebar() {
         active: route().current("users.*"),
         visible: can("view users"),
       },
-      {
-        label: "Invoices",
-        icon: IconFileDollar,
-        link: route("invoices.index"),
-        active: route().current("invoices.*"),
-        visible: can("view invoices"),
-      },
+      // {
+      //   label: "Invoices",
+      //   icon: IconFileDollar,
+      //   link: route("invoices.index"),
+      //   active: route().current("invoices.*"),
+      //   visible: can("view invoices"),
+      // },
       {
         label: "Reports",
         icon: IconReportAnalytics,
