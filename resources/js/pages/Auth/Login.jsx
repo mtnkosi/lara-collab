@@ -39,7 +39,7 @@ const Login = ({ notify }) => {
   return (
     <>
       <Title ta="center" className={classes.title}>
-        Welcome back!
+        MuniCollab
       </Title>
       <Text c="dimmed" size="sm" ta="center" mt={5}>
         You may login to your account below
@@ -49,7 +49,7 @@ const Login = ({ notify }) => {
 
       <form onSubmit={submit}>
         <ContainerBox shadow="md" p={30} mt={30} radius="md">
-          <Group grow mb="md" mt="md">
+          {/* <Group grow mb="md" mt="md">
             <Button
               leftSection={<GoogleIcon />}
               variant="default"
@@ -63,7 +63,7 @@ const Login = ({ notify }) => {
             </Button>
           </Group>
 
-          <Divider label="Or continue with email" labelPosition="center" my="lg" />
+          <Divider label="Or continue with email" labelPosition="center" my="lg" /> */}
 
           <TextInput
             label="Email"
