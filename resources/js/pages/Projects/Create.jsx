@@ -112,7 +112,7 @@ const ProjectCreate = ({ dropdowns: { companies, users, currencies } }) => {
             error={form.errors.users}
           />
 
-          <NumberInput
+          {/* <NumberInput
             label='Hourly rate'
             mt='md'
             allowNegative={false}
@@ -123,7 +123,7 @@ const ProjectCreate = ({ dropdowns: { companies, users, currencies } }) => {
             value={form.data.rate}
             onChange={value => updateValue('rate', value)}
             error={form.errors.rate}
-          />
+          /> */}
 
           <Group
             justify='space-between'

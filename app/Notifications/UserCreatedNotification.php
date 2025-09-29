@@ -39,7 +39,7 @@ class UserCreatedNotification extends Notification implements ShouldQueue
             ->subject(config('app.name').' - Your account was created!')
             ->greeting("{$notifiable->getFirstName()}, welcome aboard!")
             ->line('An account has been set up for you by the administrator. You can click the button below to log in with the provided password. It might be a good idea to change the password when you login.')
-            ->line("Password: **{$this->password}**")
+            ->line("Password: {$this->password}")
             ->action('Login', route('auth.login.form', ['email' => $notifiable->email]))
             ->salutation('See you soon!');
     }
